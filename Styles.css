@@ -1,0 +1,520 @@
+*:not(a), not(row){
+  background-color: #cccccc;box-sizing: border-box;
+}
+
+/* climate defence title */
+h5 {
+  float:left;
+  text-align:center;
+  padding-left:10px;
+  margin: 15px 0px 0px 0px;
+  display: block;
+  background-color: rgb(85, 120, 76);
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+/* styles the navbar */
+.topnav {
+  background-color: rgb(85, 120, 76);
+  overflow: hidden;
+  border-radius: 25px;
+  font-family: 'Lato', sans-serif;
+  margin: 20px, 5px, 5px, 5px;
+  top: 10px;
+  left: 5px;
+  right: 5px;
+  overflow: hidden;
+  position: fixed; 
+  width: auto;
+  z-index: 5;
+}
+
+.topnav a:not(leftfloat) {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: rgb(114, 158, 102);
+  color: white;
+}
+
+.topnav a.active {
+  background-color: rgb(114, 158, 102);
+  color: white;
+}
+
+/* styles the main content found on the main pages and all the aniaml/ places pages */
+.paragraph {
+  background-color: rgb(240, 240, 235);
+  float: left;
+  width: 300px;
+  border: 15px solid rgb(104, 151, 114);
+  padding: 50px;
+  margin: 20px;
+}
+
+.top {  
+  width: 100%;
+  background-color: rgb(114, 158, 102);
+  overflow: hidden;
+  padding-left: 20px;
+  position:relative;
+  box-sizing: border-box;
+}
+
+.top h2{
+    font-family: 'Lato', sans-serif;
+    color: rgb(240, 240, 235);
+    font-weight: bold;  
+    }
+
+.top p {
+   color: rgb(240, 240, 235); 
+    font-size: 18px;
+}
+
+.bottom {
+  width: 100%;
+  background-color: rgb(240, 240, 235);
+  overflow: hidden;
+  padding-right: 20px;
+  box-sizing: border-box;
+  padding-bottom: 50px;
+}
+
+.bottom h2{
+    font-family: 'Lato', sans-serif;
+    color: rgb(114, 158, 102);
+    font-weight: bold;
+    }
+
+.bottom p {
+   color: rgb(114, 158, 102); 
+    font-size: 18px;
+}
+
+/* styles footer*/
+.footer {
+  float: right;
+  width: 100%;
+  background-color: gray;
+  overflow: hidden;
+}
+
+.icon{
+padding-left: 14px;
+float: left;
+}
+
+/* removes the 5px margin from the page that is automatically added by most browers, also clear any other effects */
+body, html {
+    height: 100%;
+    margin: 0; padding: 0; 
+}
+
+/* this section sets and styles all the background images and makes them have a slightly darker filter on them to make titles stick out */ 
+.back-image, .playimage {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("forest2.jpg");
+  height: 85%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.elephant {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("African elephant.jpg");
+}
+
+.Bee {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Bee.jpg");
+}
+
+.Amazon {
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Amazon.jpg"); 
+}
+
+.Alps {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("The alps.jpg");
+}
+
+.Icecaps {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Ice caps.jpg");
+}
+
+.butterfly {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Monarch butterfly.jpg");
+}
+
+.Tiger {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Tiger.jpg");
+}
+
+.turtle {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("green sea turtle.jpg");
+}
+
+.polarbear {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Polar bear.jpg");
+}
+
+.reef {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Great barrier.jpg");
+}
+
+.panda {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Giant panda.jpg");
+}
+
+.gorilla {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Gorilla.jpg");
+}
+
+/* styles two titles */
+.title {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  padding-top: 80px;
+  padding-bottom: 100px;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+}
+
+.play {
+  text-align: center;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: bold;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+}
+
+/* positions the iframe for the scratch game */
+.game {
+  position: absolute;
+  transform: translate(-50%, 0); 
+  left: 50%; 
+  top: 20%;
+}
+
+.playimage {
+    height: 100%;
+}
+
+/* makes each column 1/3 of the page width */
+.column {
+float: left; 
+width: 33.33%;
+padding: 16px;
+box-sizing: border-box;
+display: inline-block;
+font-family: 'Lato', sans-serif;
+background-color: rgb(85, 120, 76);
+text-align: center;
+border-radius: 25px;
+color: white;
+border-style: solid;
+border-color: rgb(114, 158, 102);
+} 
+
+.row:after { 
+content: "";
+display: table;
+clear: both;
+} 
+
+.row{
+    background-color: rgb(114, 158, 102);
+    border-style: solid;
+    border-color: rgb(114, 158, 102);
+    border-bottom-width: 10px;
+    border-top-width: 10px;
+}
+
+/* makes it so if the browser window is small, the columns with stack on top of each other and take up the full width */
+@media screen and (max-width:600px) { 
+.column { 
+width: 100%; 
+ }
+} 
+
+/* styles the footer and its links */
+.footer {
+    padding: 16px;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgb(68, 94, 61);
+}
+
+.footer a{
+    text-decoration: none;
+    color: rgb(240, 240, 235);
+    margin:10px;
+    font-family: 'Lato', sans-serif;
+}
+
+/* removes the default scrollbar that most browsers use */
+::-webkit-scrollbar {
+  display: none;
+}
+
+.game {
+    background-color: rgb(114, 158, 102);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* styles the main content on the main page of the website */
+.contenttop {
+    width:75%;
+    float:left;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+.phototop {
+    width:25%;
+    box-sizing: border-box;
+    padding:16px;
+    float:right;
+}
+
+.rainforest {
+  max-width: 100%;
+  height: 200PX;
+  float:right;
+  border-radius: 25px;
+}
+
+.contentbottom {
+    width:75%;
+    float:right;
+    box-sizing: border-box;
+    text-align: right;
+    font-family: 'Lato', sans-serif;
+}
+
+.photobottom {
+    width:25%;
+    box-sizing: border-box;
+    padding:16px;
+    float:left;
+}
+
+.alps {
+  max-width: 100%;
+  height: 200PX;
+  float:left;
+  border-radius: 25px;
+}
+
+/* styles the buttons as default buttons are very basic */
+button {
+  background-color: rgb(240, 240, 235); 
+  border: none;
+  color: rgb(114, 158, 102);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+  border-radius: 25px;
+}
+
+.lower {
+    background-color: rgb(114, 158, 102);
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    color:rgb(240, 240, 235);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* creates the slanted triangle shape divider that is near the pages header */
+.divider {
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    background-color:rgb(240, 240, 235); 
+}
+
+.divider svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 90px;
+}
+
+.divider .shape-fill {
+    fill: #729E66;
+}
+
+/* positions and styles the pages header and gives it a underline */
+.pages {
+    width:100%;
+    box-sizing: border-box;
+    background-color:rgb(240, 240, 235);
+    height:auto;
+    position: relative;
+    padding-bottom: 4px;
+}
+
+  .pages:before {
+        content: "";
+        position: absolute;
+        left: 47%;
+        bottom: 0px;
+        height: 10px;
+        width:80px;
+        border-bottom: 3px solid rgb(114, 158, 102);
+      }
+
+.pages h2{
+    font-family: 'Lato', sans-serif;    
+    text-align: center;
+    color: black;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* organises and styles the pages grid to fit on most browser window sizes by positioning and sizing each tile automatically */
+.container {
+    padding-top: 60px;
+}
+
+.grid {
+  padding: 16px;
+position: relative;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 300px;
+  grid-gap: 16px;
+}
+
+.tile:hover{
+    opacity: 0.5;
+    background-color: black;
+}
+
+.tile {
+	position: relative;
+	width: 100%;
+}
+
+.tile img {
+	object-fit: cover;
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.tile h4 {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	background-color:rgb(114, 158, 102);
+	padding:10px 14px; 			
+	opacity: .8;	
+    font-family: 'Lato', sans-serif;
+    color: rgb(240, 240, 235);
+}
+
+/* styles the name anc scientific name of each animal page */
+.name {
+  position: absolute;
+  float:left;
+  color:rgb(240, 240, 235);
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 2px;
+  bottom: 8px;
+  left: 16px;
+
+}
+
+.name2 {
+    font-family: 'Lato', sans-serif;
+    float:left;
+    color:rgb(240, 240, 235);
+    position: absolute;
+    bottom: 2px;
+    left: 16px;
+
+}
+
+/* styling for the about page */
+.aboutname {
+    font-family: 'Bebas Neue', cursive;
+    float:left;
+    color:rgb(240, 240, 235);
+    position: absolute;
+    padding:0px;
+    margin:0px;
+    top:15%;
+    left:auto;
+    text-align: center;
+    width:100%;
+}
+
+.aboutpage {
+    width: 100%;
+    padding:16px;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: rgb(114, 158, 102);
+    top:25%;
+    left:12.5%;
+    width: 75%;
+    border-radius: 25px;
+    color:rgb(240, 240, 235);
+}
+
+.aboutpage p {
+    font-family:'Lato', sans-serif;
+    text-align: center;
+}
+
+/* makes the colums on the main page have photos as backgrounds */ 
+#beephoto {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Bee%20icon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#alpsphoto {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(The%20alps%20icon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#icecapsphoto {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Ice%20caps%20icon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
